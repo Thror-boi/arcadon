@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arcadon | Creators </title>
+<meta charset="UTF-8">
+	<link rel="icon" href="favicon.png">
+</head>
+<style>
+   
+	body {
+	color:rgb(3, 161, 0);
+	font-family:sans-serif;	
+	background-image: linear-gradient(135deg, rgb(3, 161, 0), black);
+	text-align:left;	
+	padding-bottom:20px;	
+	margin-left:30px;
+	padding-top:20px;
+	}
+	
+	a {
+	color:rgb(3, 161, 0);	
+	}
+	
+	.container {
+	display:flex;
+	flex-wrap: wrap;
+	margin-top:10px;	
+	}
+	
+	img {	
+	animation-name: un-round;
+   animation-duration: 0.75s;	
+	margin:10px;	
+	border-radius:50%;
+	box-shadow: 10px 5px 5px rgb(3, 161, 0);	
+	}
+	
+	img:hover {
+	animation-name: round-square;
+   animation-duration: 0.75s;	
+	border-radius:5%;	
+	}
+	
+	#title {
+   font-size:50px;
+	text-align:center;
+	margin-bottom:20px;	
+	}
+	
+	@keyframes round-square {
+		0% {border-radius:50%;}
+		100% {border-radius:5%;}
+	}
+	
+		
+	@keyframes un-round {
+		0% {border-radius:5%;}
+		100% {border-radius:50%;}
+	}
+	
+  	#sidebar {
+	   position:fixed;
+		right:99%;	
+		height:100%;
+	   padding-bottom:50px;		
+		width:20%;
+	   background:black;	
+		animation:slide-right 0.2s linear;
+		border-radius:15px;	
+		z-index:1;	
+		margin-top:-35px;
+		margin-bottom:-20px;
+		}
+		
+		#sidebar:hover {
+			animation:slide-left 0.2s linear;
+			right:80%;
+		}
+		
+		button, h1, a {
+		margin:10px;	
+		}
+		
+	
+		@keyframes slide-left {
+			from {right:99%;}
+			to {right:80%;}
+		}
+			
+		@keyframes slide-right {
+			from {right:80%;}
+			to {right:99%;}
+		}
+
+	   .name {
+			text-align:center;
+			font-weight:bold;
+	   }
+</style>	
+<body>
+	<div id="sidebar">
+	<h1>Hello! Now where do you want to go?</h1>
+    <a href="index.html">Home</a> <br>
+	 <a href="Games.html">Games</a>	<br>
+	 <a href="Animations.html">Animations</a> <br>
+	 <a href="Creators.html">Creators</a> <br>
+	 <a href="FAQ.html">FAQ</a> <br>
+	 <a href="Terms.html">Terms & Conditions</a> <br>
+		 <p style="margin:10px;">On This Page</p> 
+	 <a href="#title">Top</a> <br>
+	 <a href="#bottom">Bottom</a> <br>
+	</div>
+	
+	<div id="title">
+	<h1>Aracadon</h1>
+	<h1>The Best Creators of Scratch</h1>
+   </div>
+	
+	<p>Arcadon is proud to have partnered with some of the best content creators on Scratch! Their games and animations deserve recognition, and Arcadon plans to give it to them! If you're interested in becoming a creator go<a href="FAQ.html#creator">here</a>.</p>
+	
+	<div class="container">
+		<a href="https://scratch.mit.edu/users/mister_dazzling/"><img src="https://cdn2.scratch.mit.edu/get_image/user/52459479_240x240.png"><p class="name">mister_dazzling</p></a>
+		<a href="https://scratch.mit.edu/users/Epicbro90/"> <img src="https://cdn2.scratch.mit.edu/get_image/user/15933162_240x240.png"><p class="name">Epicbro90</p></a>
+		<a href="https://scratch.mit.edu/users/LordThror/"> <img src="https://i.ibb.co/56Tpbxw/thror.png" width="240" height="240"><p class="name">Erosion (LordThror)</p></a>
+		<a href="https://scratch.mit.edu/users/Thintin/"> <img src="https://cdn2.scratch.mit.edu/get_image/user/34519902_32x32.png" width="240" height="240"><p class="name">Thintin</p></a>
+	</div>
+	
+		<div id="bottom" style="text-align:center;">
+	 <a href="index.html">Home</a> |
+	 <a href="Games.html">Games</a>	|
+	 <a href="Animations.html">Animations</a> |
+	 <a href="Creators.html">Creators</a> |
+	 <a href="FAQ.html">FAQ</a> |
+	 <a href="Terms.html">Terms & Conditions</a>
+	</div>	
+	
+</body>
+	</html>

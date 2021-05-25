@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arcadon | Animations</title>
+<meta charset="UTF-8">
+	<link rel="icon" href="favicon.png">
+</head>
+<style>
+   
+	body {
+	color:rgb(3, 161, 0);
+	font-family:sans-serif;	
+	background-image: linear-gradient(135deg, black, rgb(3, 161, 0));
+	text-align:left;	
+	padding-bottom:20px;	
+	margin-left:30px;
+	padding-top:20px;
+	}
+	
+	a {
+	color:rgb(3, 161, 0);	
+	}
+	
+	.container {
+	display:flex;
+	flex-wrap: wrap;
+	margin-top:10px;	
+	}
+	
+	img {
+	margin:10px;	
+	box-shadow: 10px 5px 5px rgb(3, 161, 0);
+	}
+	
+	img:hover {
+	animation-name: hover-up;
+   animation-duration: 0.25s;	
+	margin-top:0px;	
+	margin-bottom:20px;	
+	}
+	
+	#title {
+   font-size:50px;
+	text-align:center;
+	margin-bottom:20px;	
+	}
+	
+	@keyframes hover-up {
+		0% {margin-top:10px; margin-bottom:10px;}
+		100% {margin-top:0px; margin-bottom:20px;}
+	}
+	
+		
+  	#sidebar {
+	   position:fixed;
+		right:99%;	
+		height:100%;
+	   padding-bottom:50px;		
+		width:20%;
+	   background:black;	
+		animation:slide-right 0.2s linear;
+		border-radius:15px;	
+		z-index:1;	
+		margin-top:-35px;
+		margin-bottom:-20px;
+		}
+		
+		#sidebar:hover {
+			animation:slide-left 0.2s linear;
+			right:80%;
+		}
+		
+		button, h1, a {
+		margin:10px;	
+		}
+		
+	
+		@keyframes slide-left {
+			from {right:99%;}
+			to {right:80%;}
+		}
+			
+		@keyframes slide-right {
+			from {right:80%;}
+			to {right:99%;}
+		}
+
+</style>	
+<body>
+	<div id="sidebar">
+	<h1>Hello! Now where do you want to go?</h1>
+    <a href="index.html">Home</a> <br>
+	 <a href="Games.html">Games</a>	<br>
+	 <a href="Animations.html">Animations</a> <br>
+	 <a href="Creators.html">Creators</a> <br>
+	 <a href="FAQ.html">FAQ</a> <br>
+	 <a href="Terms.html">Terms & Conditions</a> <br>
+		 <p style="margin:10px;">On This Page</p> 
+	 <a href="#title">Top</a> <br>
+	 <a href="#bottom">Bottom</a> <br>
+	</div>
+	
+	<div id="title">
+	<h1>Aracadon</h1>
+	<h1>The Best Animations of Scratch</h1>
+   </div>
+	
+	<p>The best animations of Arcadon! All in one place for your enjoyment. Just click to launch in your browser and have fun!</p>
+
+<div class="container">
+	<a target="_blank" href="Scratch Court Case - OFFICIAL Trailer.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/406443053_282x310.png"></a> 
+	<a target="_blank" href="Scratch Court Case - Part 1_ The Hearing.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/366743427_282x310.png"></a> 
+	<a target="_blank" href="Scratch Court Case - Part 1_ The Trial.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/407623188_282x310.png"></a>	
+	<a target="_blank" href="we_ask.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/458127922_282x310.png"></a>
+	<a target="_blank" href="The Exterra War - OFFICIAL TRAILER.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/430027070_282x310.png"></a> 
+	<a target="_blank" href="The Exterra War - Episode 1_ Out of the Shadows.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/446730013_282x310.png"></a> 
+	<a target="_blank" href="The Exterra War - Episode 1_ Out of the Shadows (Intermission).html"><img src="https://cdn2.scratch.mit.edu/get_image/project/473155947_282x310.png"></a>
+	<a target="_blank" href="Gardening.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/435129160_282x310.png"></a>
+	<a target="_blank" href="Storming the Base.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/422948968_282x310.png"></a>
+	<a target="_blank" href="Animation Storyboard.html"><img src="https://cdn2.scratch.mit.edu/get_image/project/434565711_282x310.png"></a>
+</div>
+	
+		<div id="bottom" style="text-align:center;">
+	 <a href="index.html">Home</a> |
+	 <a href="Games.html">Games</a>	|
+	 <a href="Animations.html">Animations</a> |
+	 <a href="Creators.html">Creators</a> |
+	 <a href="FAQ.html">FAQ</a> |
+	 <a href="Terms.html">Terms & Conditions</a>
+	</div>	
+	
+</body>
+	</html>
